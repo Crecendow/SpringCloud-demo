@@ -1,0 +1,11 @@
+server:
+  port: 8833
+spring:
+  application:
+    name: txy-user
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+    register-with-eureka: true
+    fetch-registry: true

@@ -1,0 +1,22 @@
+feign:
+  hystrix:
+    enabled: true
+
+server:
+  port: 8811
+
+
+spring:
+  application:
+    name: txy-order
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8888/eureka
+
+
+txy-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
